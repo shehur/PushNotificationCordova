@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "PUSH",
+  "short_name": "PUSH",
+  "version": "com.phonegap.helloworld",
+  "description": "Notificação push com Apache Cordova.",
+  "author": "Ben-Hur",
+  "icons": [],
+  "start_url": "index.html"
+}
