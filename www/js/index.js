@@ -16,16 +16,13 @@ var app = {
        		alert('ação executada.');
       });
 
-	   var notificationOpenedCallback = function(jsonData) {
-        var str_json = JSON.stringify(jsonData);
-        resposta.innerText = str_json;
+	   var notificationOpenedCallback = function(jsonData) {        
+	   		var Titulo = jsonData.notification.payload.title;
+	   		var Mensagem = jsonData.notification.payload.body;
 
-        var json = JSON.parse(str_json);
+        resposta.innerText = Titulo + ": " + Mensagem;
 
-	   		var Titulo = json.headings.en;
-	   		var Mensagem = json.contents.en;
-
-	   		alert("" + Titulo + "\n" + Mensagem);
+	   		alert(Titulo + "\n" + Mensagem);
 
 	   };
 
