@@ -1,0 +1,4 @@
+#Mon Nov 26 10:46:48 BRST 2018
+base.0=C\:\\Users\\Varriano\\Documents\\Documentos_BEN-HUR\\skills\\apache-cordova\\teste19\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
