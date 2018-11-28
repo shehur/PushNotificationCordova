@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Nov 26 10:46:49 BRST 2018
+#Wed Nov 28 14:36:11 BRST 2018
 56.path=www/plugins/cordova-plugin-globalization/www/GlobalizationError.js
 5.base=C\:\\Users\\Varriano\\Documents\\Documentos_BEN-HUR\\skills\\apache-cordova\\teste19\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 42.base=C\:\\Users\\Varriano\\Documents\\Documentos_BEN-HUR\\skills\\apache-cordova\\teste19\\platforms\\android\\app\\build\\intermediates\\assets\\debug

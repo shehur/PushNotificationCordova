@@ -8,14 +8,22 @@ var app = {
     },
 
     receivedEvent: function(id) {
-       var acionar = document.getElementById('acionar');
-       acionar.addEventListener('click', function() {
+      var acionar = document.getElementById('acionar');
+      var resposta = document.getElementById('resposta');
+
+      acionar.addEventListener('click', function() {
+          resposta.innerText = 'ação executada.';
        		alert('ação executada.');
-       });
-	   var notificationOpenedCallback = function(jsonData) {
-	   		var Titulo = jsonData.headings.en;
-	   		var Mensagem = jsonData.headings.en;
-	   		alert(Titulo + '\n' + Mensagem);
+      });
+
+	   var notificationOpenedCallback = function(jsonData) {        
+	   		var Titulo = jsonData.notification.payload.title;
+	   		var Mensagem = jsonData.notification.payload.body;
+
+        resposta.innerText = Titulo + ": " + Mensagem;
+
+	   		alert(Titulo + "\n" + Mensagem);
+
 	   };
 
 	  window.plugins.OneSignal
