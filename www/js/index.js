@@ -16,14 +16,16 @@ var app = {
        		alert('ação executada.');
       });
 
-	   var notificationOpenedCallback = function(jsonData) {        
+	    var notificationOpenedCallback = function(jsonData) {        
 	   		var Titulo = jsonData.notification.payload.title;
 	   		var Mensagem = jsonData.notification.payload.body;
 
-        resposta.innerText = Titulo + ": " + Mensagem;
+        var notification = Titulo + ": " + Mensagem;
+
+        localStorage.setItem('notification', notification);
 
         window.location.reload();
-	   };
+	    };
 
 	  window.plugins.OneSignal
 	    .startInit("260e2302-5f86-4707-ac95-2f06511e6c1c")
