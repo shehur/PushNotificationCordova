@@ -22,8 +22,7 @@ var app = {
 
         resposta.innerText = Titulo + ": " + Mensagem;
 
-	   		alert(Titulo + "\n" + Mensagem);
-
+        window.location.reload();
 	   };
 
 	  window.plugins.OneSignal
